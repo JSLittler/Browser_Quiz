@@ -3,14 +3,13 @@
     <body style="background-color: green; text-align: center; font-size:40px; color:white">
       <hr width="50%"></hr>
       <h3>Hi <%=@player_name%>. Click on the correct answer:</h3>
-      <h4>Question: <%=@question%></h4>
+      <h4 style="color:yellow">Question: <%=@question%></h4>
     <hr width="50%"></hr>
     <div style="margin-right: 215px; margin-left: 215px; background-color: green">
     <form action="/answer" method="post">
     <button name="Answer: A" type="submit" value="A"><h4>A: <%=@answer_A%></h4></button>
     <button name="Answer: B" type="submit" value="B"><h4>B: <%=@answer_B%></h4></button>
     <button name="Answer: C" type="submit" value="C"><h4>C: <%=@answer_C%></h4></button>
-    <button name="Answer: D" type="submit" value="D"><h4>D: <%=@answer_D%></h4></button>
     </div>
   </body>
 </html>
