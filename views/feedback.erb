@@ -1,0 +1,13 @@
+<html>
+  <head><h1>Quiz Time</h1></head> <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvNEK99C4D6DxieA1b1j8fV8lSXLzbAXUBWJXAyxRutfXa8Js4>
+    <body style="background-color: green; text-align: center; font-size:40px; color:white">
+      <hr width="50%"></hr>
+      <h3>Hi <%=@player_name%>. <%=@result%></h3>
+      <h4 style="color:yellow">Would you like to try another questions?</h4>
+    <hr width="50%"></hr>
+    <div style="margin-right: 215px; margin-left: 215px; background-color: green">
+    <form action="/name" method="post">
+    <button name="new-question" type="submit"><h4>New question?</h4></button>
+    </div>
+  </body>
+</html>
