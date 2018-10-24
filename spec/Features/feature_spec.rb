@@ -15,7 +15,6 @@ feature 'Browser_Quiz' do
     expect(page).to have_content 'A:'
     expect(page).to have_content 'B:'
     expect(page).to have_content 'C:'
-    expect(page).to have_content 'D:'
   end
 
 end
