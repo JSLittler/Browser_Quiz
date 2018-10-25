@@ -19,7 +19,7 @@ class Question
   end
 
   def set_question_number
-    @question_number = rand(10)
+    @question_number = rand(9) + 1
   end
 
   def set_question

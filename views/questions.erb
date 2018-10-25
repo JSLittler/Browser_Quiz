@@ -1,15 +1,19 @@
 <html>
-  <head><h1>Quiz Time</h1></head> <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvNEK99C4D6DxieA1b1j8fV8lSXLzbAXUBWJXAyxRutfXa8Js4>
-    <body style="background-color: green; text-align: center; font-size:40px; color:white">
-      <hr width="50%"></hr>
+  <title>Browser Quiz</title>
+  <body style="background-color: green; text-align: center; font-size:40px; color:white">
+    <hr width="50%"></hr>
+      <h1>Browser</h1>
+      <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvNEK99C4D6DxieA1b1j8fV8lSXLzbAXUBWJXAyxRutfXa8Js4>
+    <hr width="50%"></hr>
       <h3>Hi <%=@player_name%>. Click on the correct answer:</h3>
       <h4 style="color:yellow">Question: <%=@question%></h4>
     <hr width="50%"></hr>
     <div style="margin-right: 215px; margin-left: 215px; background-color: green">
-    <form action="/answer" method="post">
-    <button name="answer" type="submit" value="a"><h4>A: <%=@answer_A%></h4></button>
-    <button name="answer" type="submit" value="b"><h4>B: <%=@answer_B%></h4></button>
-    <button name="answer" type="submit" value="c"><h4>C: <%=@answer_C%></h4></button>
+      <form action="/answer" method="post">
+        <button name="answer" type="submit" value="a"><h4>A: <%=@answer_A%></h4></button>
+        <button name="answer" type="submit" value="b"><h4>B: <%=@answer_B%></h4></button>
+        <button name="answer" type="submit" value="c"><h4>C: <%=@answer_C%></h4></button>
+      </form>
     </div>
   </body>
 </html>

@@ -36,6 +36,7 @@ class Browser_Quiz < Sinatra::Base
   end
 
   get '/feedback' do
+    @player_name = @player.name
     @correct_answer = session[:correct_answer]
     @player_answer = session[:answer]
     if @player_answer == @correct_answer
